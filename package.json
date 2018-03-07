@@ -1,41 +1,18 @@
 {
-  "name": "socket.io-react",
-  "version": "1.2.0",
-  "description": "A High-Order Component to connect React and Socket.io",
-  "main": "build/index.js",
+  "name": "react-socket",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-scripts": "1.1.1",
+    "socket.io-client": "^2.0.4",
+    "socket.io-react": "^1.2.0"
+  },
   "scripts": {
-    "build": "babel lib --out-dir build",
-    "prepublish": "npm run build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/PlatziDev/socket.io-react.git"
-  },
-  "keywords": [
-    "react",
-    "socket.io",
-    "websocket"
-  ],
-  "author": "Sergio Daniel Xalambrí <sergio@xalambri.xyz> (http://sergio.xalambri.xyz/)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/PlatziDev/socket.io-react/issues"
-  },
-  "homepage": "https://github.com/PlatziDev/socket.io-react#readme",
-  "devDependencies": {
-    "babel": "6.23.0",
-    "babel-cli": "6.6.5",
-    "babel-plugin-transform-class-properties": "6.24.1",
-    "babel-plugin-transform-es2015-block-scoping": "6.24.1",
-    "babel-plugin-transform-es2015-classes": "6.24.1",
-    "babel-plugin-transform-es2015-modules-commonjs": "6.24.1",
-    "babel-plugin-transform-es2015-spread": "6.22.0",
-    "babel-plugin-transform-react-constant-elements": "6.23.0",
-    "babel-plugin-transform-react-inline-elements": "6.22.0"
-  },
-  "peerDependencies": {
-    "socket.io-client": "^1.4.5",
-    "prop-types": "^15.5.10",
-    "react": "^15.6.1"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   }
 }
